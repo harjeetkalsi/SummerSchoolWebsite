@@ -10,32 +10,32 @@ import Triangle from '../components/Triangle';
 
 const Background = () => (
   <div>
-    <Triangle
-      color="backgroundDark"
-      height={['35vh', '80vh']}
-      width={['95vw', '60vw']}
-    />
+    {/*<Triangle*/}
+      {/*color="backgroundDark"*/}
+      {/*height={['35vh', '80vh']}*/}
+      {/*width={['95vw', '60vw']}*/}
+    {/*/>*/}
 
-    <Triangle
-      color="secondary"
-      height={['38vh', '80vh']}
-      width={['50vw', '35vw']}
-    />
+    {/*<Triangle*/}
+      {/*color="secondary"*/}
+      {/*height={['38vh', '80vh']}*/}
+      {/*width={['50vw', '35vw']}*/}
+    {/*/>*/}
 
-    <Triangle
-      color="primaryDark"
-      height={['25vh', '35vh']}
-      width={['75vw', '60vw']}
-      invertX
-    />
+    {/*<Triangle*/}
+      {/*color="primaryDark"*/}
+      {/*height={['25vh', '35vh']}*/}
+      {/*width={['75vw', '60vw']}*/}
+      {/*invertX*/}
+    {/*/>*/}
 
-    <Triangle
-      color="backgroundDark"
-      height={['20vh', '20vh']}
-      width={['100vw', '100vw']}
-      invertX
-      invertY
-    />
+    {/*<Triangle*/}
+      {/*color="backgroundDark"*/}
+      {/*height={['20vh', '20vh']}*/}
+      {/*width={['100vw', '100vw']}*/}
+      {/*invertX*/}
+      {/*invertY*/}
+    {/*/>*/}
   </div>
 );
 
@@ -64,16 +64,16 @@ const LandingPage = () => (
             <Heading
               textAlign="center"
               as="h1"
-              color="primary"
+              color="background"
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}
             >
-              {`Summer School, I'm ${name}!`}
+              {`Summer School !`}
             </Heading>
 
             <Heading
               as="h2"
-              color="primary"
+              color="background"
               fontSize={[4, 5, 6]}
               mb={[3, 5]}
               textAlign="center"

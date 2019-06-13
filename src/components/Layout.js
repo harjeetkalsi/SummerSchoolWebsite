@@ -20,8 +20,15 @@ body {
   box-sizing: border-box; 
   margin: 0;
   font-family: Cabin;
+  color: white;
   overflow-x: hidden;
+  background: black;
 }
+
+a {
+   color: white;
+}
+
 `;
 
 config({ ssrFadeout: true });
