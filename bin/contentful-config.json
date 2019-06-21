@@ -1100,13 +1100,13 @@
       },
       "fields": {
         "name": {
-          "en-US": "Medium"
+          "en-US": "Eventbrite"
         },
         "url": {
-          "en-US": "https://medium.com/@emasuriano"
+          "en-US": "https://www.eventbrite.co.uk/e/summer-school-race-knowledge-science-tickets-56631002854"
         },
         "fontAwesomeIcon": {
-          "en-US": "medium"
+          "en-US": "calendar"
         }
       }
     },
