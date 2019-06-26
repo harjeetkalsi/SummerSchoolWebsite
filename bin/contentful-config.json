@@ -1232,13 +1232,13 @@
       },
       "fields": {
         "name": {
-          "en-US": "Twitter"
+          "en-US": "Instagram"
         },
         "url": {
-          "en-US": "https://twitter.com/emasuriano"
+          "en-US": "https://www.instagram.com/consenteduk/?hl=en"
         },
         "fontAwesomeIcon": {
-          "en-US": "twitter"
+          "en-US": "instagram"
         }
       }
     }
