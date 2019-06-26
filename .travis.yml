@@ -15,7 +15,7 @@ install:
   - yarn
 
 script:
-  - yarn build
+  - SPACE_ID=9yxuzkcxr8zo ACCESS_TOKEN=qTQx1rAnc3eEoAWcGnQuBA8VMrjzd_ljuBSDtgZV6xQ yarn build
   - yarn lint
 
 branches:
