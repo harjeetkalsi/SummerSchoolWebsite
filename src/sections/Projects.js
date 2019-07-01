@@ -13,34 +13,34 @@ import Hide from '../components/Hide';
 
 const Background = () => (
   <div>
-    <Triangle
-      color="secondaryLight"
-      height={['80vh', '80vh']}
-      width={['100vw', '100vw']}
-      invertX
-    />
+    {/*<Triangle*/}
+      {/*color="secondaryLight"*/}
+      {/*height={['80vh', '80vh']}*/}
+      {/*width={['100vw', '100vw']}*/}
+      {/*invertX*/}
+    {/*/>*/}
 
-    <Triangle
-      color="background"
-      height={['50vh', '20vh']}
-      width={['50vw', '50vw']}
-      invertX
-    />
+    {/*<Triangle*/}
+      {/*color="background"*/}
+      {/*height={['50vh', '20vh']}*/}
+      {/*width={['50vw', '50vw']}*/}
+      {/*invertX*/}
+    {/*/>*/}
 
-    <Triangle
-      color="primaryDark"
-      height={['25vh', '40vh']}
-      width={['75vw', '60vw']}
-      invertX
-      invertY
-    />
+    {/*<Triangle*/}
+      {/*color="primaryDark"*/}
+      {/*height={['25vh', '40vh']}*/}
+      {/*width={['75vw', '60vw']}*/}
+      {/*invertX*/}
+      {/*invertY*/}
+    {/*/>*/}
 
-    <Triangle
-      color="backgroundDark"
-      height={['25vh', '20vh']}
-      width={['100vw', '100vw']}
-      invertY
-    />
+    {/*<Triangle*/}
+      {/*color="backgroundDark"*/}
+      {/*height={['25vh', '20vh']}*/}
+      {/*width={['100vw', '100vw']}*/}
+      {/*invertY*/}
+    {/*/>*/}
   </div>
 );
 
@@ -61,11 +61,11 @@ const TextContainer = styled.div`
   flex-direction: column;
   padding: 10px;
   width: 100%;
-  width: calc(100% - ${CARD_HEIGHT});
-
-  ${MEDIA_QUERY_SMALL} {
-    width: calc(100% - (${CARD_HEIGHT} / 2));
-  }
+  // width: calc(100% - ${CARD_HEIGHT});
+  //
+  // ${MEDIA_QUERY_SMALL} {
+  //   width: calc(100% - (${CARD_HEIGHT} / 2));
+  // }
 `;
 
 const ImageContainer = styled.div`
@@ -120,47 +120,47 @@ const Project = ({
             {name}
           </Title>
         </span>
-        <Text width={[1]} style={{ overflow: 'auto' }}>
+        <Text width={[1]} style={{ overflow: 'auto' , colour:'white'}}>
           {description}
         </Text>
       </TextContainer>
 
-      <ImageContainer>
-        <ProjectTag>
-          <Flex
-            style={{
-              float: 'right',
-            }}
-          >
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="Check repository"
-                fontAwesomeIcon="github"
-                url={repositoryUrl}
-              />
-            </Box>
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="See project"
-                fontAwesomeIcon="globe"
-                url={projectUrl}
-              />
-            </Box>
-          </Flex>
-          <ImageSubtitle
-            bg="primaryLight"
-            color="white"
-            y="bottom"
-            x="right"
-            round
-          >
-            {type}
-          </ImageSubtitle>
-          <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
-          </Hide>
-        </ProjectTag>
-      </ImageContainer>
+      {/*<ImageContainer>*/}
+        {/*<ProjectTag>*/}
+          {/*<Flex*/}
+            {/*style={{*/}
+              {/*float: 'right',*/}
+            {/*}}*/}
+          {/*>*/}
+            {/*<Box mx={1} fontSize={5}>*/}
+              {/*<SocialLink*/}
+                {/*name="Check repository"*/}
+                {/*fontAwesomeIcon="github"*/}
+                {/*url={repositoryUrl}*/}
+              {/*/>*/}
+            {/*</Box>*/}
+            {/*<Box mx={1} fontSize={5}>*/}
+              {/*<SocialLink*/}
+                {/*name="See project"*/}
+                {/*fontAwesomeIcon="globe"*/}
+                {/*url={projectUrl}*/}
+              {/*/>*/}
+            {/*</Box>*/}
+          {/*</Flex>*/}
+          {/*<ImageSubtitle*/}
+            {/*bg="primaryLight"*/}
+            {/*color="white"*/}
+            {/*y="bottom"*/}
+            {/*x="right"*/}
+            {/*round*/}
+          {/*>*/}
+            {/*{type}*/}
+          {/*</ImageSubtitle>*/}
+          {/*<Hide query={MEDIA_QUERY_SMALL}>*/}
+            {/*<ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>*/}
+          {/*</Hide>*/}
+        {/*</ProjectTag>*/}
+      {/*</ImageContainer>*/}
     </Flex>
   </Card>
 );
@@ -172,16 +172,17 @@ Project.propTypes = {
   repositoryUrl: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   publishedDate: PropTypes.string.isRequired,
-  logo: PropTypes.shape({
-    image: PropTypes.shape({
-      src: PropTypes.string,
-    }),
-  }).isRequired,
+  // logo: PropTypes.shape({
+  //   image: PropTypes.shape({
+  //     src: PropTypes.string,
+  //   }),
+  // }).isRequired,
 };
 
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" Box="notebook" />
+    <Section.Header name="Programme" icon="💻" Box="notebook" />
+      <p>Day 1</p>
     <StaticQuery
       query={graphql`
         query ProjectsQuery {
@@ -194,12 +195,7 @@ const Projects = () => (
               repositoryUrl
               publishedDate(formatString: "YYYY")
               type
-              logo {
-                title
-                image: resize(width: 200, quality: 100) {
-                  src
-                }
-              }
+
             }
           }
         }

@@ -11,27 +11,27 @@ import ImageSubtitle from '../components/ImageSubtitle';
 
 const Background = () => (
   <div>
-    <Triangle
-      color="backgroundDark"
-      height={['15vh', '10vh']}
-      width={['100vw', '100vw']}
-      invertX
-    />
+    {/*<Triangle*/}
+      {/*color="backgroundDark"*/}
+      {/*height={['15vh', '10vh']}*/}
+      {/*width={['100vw', '100vw']}*/}
+      {/*invertX*/}
+    {/*/>*/}
 
-    <Triangle
-      color="secondary"
-      height={['50vh', '40vh']}
-      width={['70vw', '40vw']}
-      invertY
-    />
+    {/*<Triangle*/}
+      {/*color="secondary"*/}
+      {/*height={['50vh', '40vh']}*/}
+      {/*width={['70vw', '40vw']}*/}
+      {/*invertY*/}
+    {/*/>*/}
 
-    <Triangle
-      color="primaryDark"
-      height={['40vh', '15vh']}
-      width={['100vw', '100vw']}
-      invertX
-      invertY
-    />
+    {/*<Triangle*/}
+      {/*color="primaryDark"*/}
+      {/*height={['40vh', '15vh']}*/}
+      {/*width={['100vw', '100vw']}*/}
+      {/*invertX*/}
+      {/*invertY*/}
+    {/*/>*/}
   </div>
 );
 
@@ -135,7 +135,7 @@ const Writing = () => (
       return (
         isMediumUserDefined && (
           <Section.Container id="writing" Background={Background}>
-            <Section.Header name="Writing" icon="✍️" label="writing" />
+            <Section.Header name="Register" icon="✍️" label="Register" />
             <CardContainer minWidth="300px">
               {posts.map(p => (
                 <Fade bottom>

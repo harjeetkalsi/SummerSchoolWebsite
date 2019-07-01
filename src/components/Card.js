@@ -4,6 +4,7 @@ import { Card as CardRebass } from 'rebass';
 export const CardContainer = styled.div`
   display: grid;
   grid-gap: 30px;
+  color: white;
 
   grid-template-columns: repeat(
     auto-fill,
@@ -17,7 +18,7 @@ export const CardContainer = styled.div`
 `;
 
 export const Card = styled(CardRebass).attrs({
-  bg: 'white',
+  bg: 'black',
   boxShadow: 0,
   borderRadius: 8,
 })`
