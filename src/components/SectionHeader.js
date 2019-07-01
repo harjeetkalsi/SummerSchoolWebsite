@@ -5,6 +5,7 @@ import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
 import LinkAnimated from './LinkAnimated';
+import image from './Logo/hackney.png';
 
 const SectionContainer = styled.div`
   min-height: 100vh;
@@ -16,8 +17,9 @@ const SectionContainer = styled.div`
   justify-content: center;
   padding: 5em 1em;
   scroll-behavior: smooth;
-  background: pink;
+  background: linear-gradient( rgba(0, 0, 0, 0), 80%, white ), url(${image});
   background-repeat: no-repeat;
+  background-position: center center; 
 `;
 
 const DefaultBackground = () => <div />;
